@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Layout from './components/layout/Layout';
+import {BrowserRouter} from 'react-router-dom'
+
+import '../src/assets/boxicons-2.0.7/css/boxicons.min.css';
+import '../src/assets/css/grid.css';
+import '../src/assets/css/index.css';
+import '../src/assets/css/theme.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter >
+      <div className="App">
+        <Layout />
+      </div>
+    </BrowserRouter>
   );
 }
 
